@@ -24,7 +24,7 @@ module github.com/bmuschko/json-parsing
 go 1.13
 ```
 
-Create a new file called `main.go`. The content could look as shown in [this file](without-dependency/main.go).
+Create a new file called `main.go`. The content could look as shown in [this file](./code-without-dependency/main.go).
 
 Run the `go build` command and execute the binary. The binary may use a different file extension depending on your operating system. The parsed JSON data could look as follows:
 
@@ -60,7 +60,7 @@ $ go list -m -versions github.com/buger/jsonparser
 github.com/buger/jsonparser
 ```
 
-Modify the contents of `main.go`. Use the API of the external dependency. The content could look as shown in [this file](with-dependency/main.go). If you are working in an IDE, the "indirect" comment will be removed automatically.
+Modify the contents of `main.go`. Use the API of the external dependency. The content could look as shown in [this file](./code-with-dependency/main.go). If you are working in an IDE, the "indirect" comment will be removed automatically.
 
 Run the `go build` command and execute the binary. The binary may use a different file extension depending on your operating system. The value of the JSON attribute "city" could look as follows:
 

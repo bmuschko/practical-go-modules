@@ -1,0 +1,4 @@
+github.com/bmuschko/calc v1.0.0 h1:tGKECijImegngfK6YkHDb0RISfIFyDz9J74UkmG0fZE=
+github.com/bmuschko/calc v1.0.0/go.mod h1:Nfj2LdL0YqU95zI2PCWaNrsGtB9tuIUj66OrrA7oynE=
+github.com/bmuschko/calc/v2 v2.0.0 h1:aOcgu9iJ1EScAarDNJpoApTQ8+1htJohmZBqV+MrKak=
+github.com/bmuschko/calc/v2 v2.0.0/go.mod h1:CX2W8NBoVgG/Tkb90K/S0ixVX7Xeu5NgPesZMNjCQBs=
