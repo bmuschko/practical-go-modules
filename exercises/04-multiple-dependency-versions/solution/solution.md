@@ -20,7 +20,7 @@ func main() {
 Retrieve version `v1.0.0` with the `go get` command.
 
 ```bash
-go get github.com/bmuschko/calc@v1.0.0
+$ go get github.com/bmuschko/calc@v1.0.0
 go: finding github.com/bmuschko/calc v1.0.0
 go: downloading github.com/bmuschko/calc v1.0.0
 go: extracting github.com/bmuschko/calc v1.0.0
@@ -46,7 +46,7 @@ Running `go run main.go` should return the value 3 on the console.
 Now, get version 2 two of the library.
 
 ```bash
-go get github.com/bmuschko/calc/v2@v2.0.0
+$ go get github.com/bmuschko/calc/v2@v2.0.0
 go: finding github.com/bmuschko/calc/v2 v2.0.0
 go: finding github.com/bmuschko/calc v2.0.0
 go: finding github.com/bmuschko v2.0.0
