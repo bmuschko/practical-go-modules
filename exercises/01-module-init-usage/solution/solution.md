@@ -4,14 +4,14 @@
 
 Anywhere in your file system create a new directory and navigate to it.
 
-```
+```bash
 $ mkdir json-parsing
 $ cd json-parsing
 ```
 
 Initialize the project for using Go Modules.
 
-```
+```bash
 $ go mod init github.com/bmuschko/json-parsing
 go: creating new go.mod: module github.com/bmuschko/json-parsing
 ```
@@ -28,7 +28,7 @@ Create a new file called `main.go`. The content could look as shown in [this fil
 
 Run the `go build` command and execute the binary. The binary may use a different file extension depending on your operating system. The parsed JSON data could look as follows:
 
-```
+```bash
 $ go build .
 $ ./json-parsing
 {John 31 New York}
@@ -38,7 +38,7 @@ $ ./json-parsing
 
 Get the latest version of the external dependency.
 
-```
+```bash
 $ go get github.com/buger/jsonparser
 go: finding github.com/buger/jsonparser latest
 ```
@@ -55,7 +55,7 @@ require github.com/buger/jsonparser v0.0.0-20191204142016-1a29609e0929 // indire
 
 The `go list` command will show that no versions have been published yet.
 
-```
+```bash
 $ go list -m -versions github.com/buger/jsonparser
 github.com/buger/jsonparser
 ```
@@ -64,7 +64,7 @@ Modify the contents of `main.go`. Use the API of the external dependency. The co
 
 Run the `go build` command and execute the binary. The binary may use a different file extension depending on your operating system. The value of the JSON attribute "city" could look as follows:
 
-```
+```bash
 $ go build .
 $ ./json-parsing
 New York
