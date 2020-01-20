@@ -53,6 +53,13 @@ go 1.13
 require github.com/buger/jsonparser v0.0.0-20191204142016-1a29609e0929 // indirect
 ```
 
+The `go list` command will show that no versions have been published yet.
+
+```
+$ go list -m -versions github.com/buger/jsonparser
+github.com/buger/jsonparser
+```
+
 Modify the contents of `main.go`. Use the API of the external dependency. The content could look as shown in [this file](with-dependency/main.go). If you are working in an IDE, the "indirect" comment will be removed automatically.
 
 Run the `go build` command and execute the binary. The binary may use a different file extension depending on your operating system. The value of the JSON attribute "city" could look as follows:

@@ -15,5 +15,6 @@ In this exercise, you will initialize a project to use Go Modules. Later, you wi
 
 1. Instead of using the `encoding/json` package for parsing the JSON data, use the external package [`buger/jsonparser`](https://github.com/buger/jsonparser). Add the latest version of this dependency to the project.
 2. Inspect the dependency declaration in the `go.mod` file. What version do you see? Why is the dependency marked as "indirect"?
-3. Locate the dependency files in the cache.
-4. Import the package of the external dependency in your `main.go` file. Use the API of the package e.g. get the value of the attribute "city". Execute the `go build` command to generate a binary file you can use to execute the program. Does the dependency declaration change in `go.mod`?
+3. Verify if other versions are available for the dependency with `go list` or by looking at the GitHub repository.
+4. Locate the dependency files in the cache.
+5. Import the package of the external dependency in your `main.go` file. Use the API of the package e.g. get the value of the attribute "city". Execute the `go build` command to generate a binary file you can use to execute the program. Does the dependency declaration change in `go.mod`?
