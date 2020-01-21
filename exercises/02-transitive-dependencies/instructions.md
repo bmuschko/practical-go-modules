@@ -2,7 +2,7 @@
 
 In this exercise, you will evolve the dependency set of an existing project. You will find that the dependency you are about to add is already part of the dependency graph but with a different version. For a clearer picture, you will inspect the dependency graph and identify the selected versions.
 
-1. Navigate to the subdirectory named [start](./start). It already contains go code and an existing Go Modules setup.
+1. Navigate to the subdirectory named [start](./start). It already contains Go code and an existing Go Modules setup.
 2. Inspect the `go.mod` file and identify its dependencies.
 3. Render the dependency graph and inspect the transitive dependencies.
 4. Verify the select versions.

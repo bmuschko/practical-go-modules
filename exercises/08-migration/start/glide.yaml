@@ -1,0 +1,9 @@
+package: .
+import:
+- package: github.com/stretchr/testify
+  version: ^1.4.0
+  subpackages:
+  - assert
+testImport:
+- package: github.com/bmuschko/calc
+  version: ^2.0.0
