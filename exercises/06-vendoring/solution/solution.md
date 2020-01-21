@@ -62,3 +62,11 @@ $ go build -mod=vendor .
 $ ./my-app
 INFO[0000] A walrus appears                              animal=walrus
 ```
+
+# Discussion
+
+> From your perspective, what could be an issue with using vendoring?
+
+- The `vendor` folder is not used by default for the `go` command. If you do not provide `-mod=vendor`, it will not be respected. This can lead to confusion.
+- Vendored dependencies can take up a lot of space on disk especially if your project is depending on a lot of external packages. As a result, cloning a repository with vendored dependencies can take a long time.
+- Updating a dependency in the `vendor` directory can make reviewing pull requests more difficult.

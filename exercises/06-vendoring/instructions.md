@@ -8,3 +8,4 @@ In this exercise, you will vendor the dependencies declared in a `go.mod` file a
 4. Vendor the dependencies. Inspect the contents of the `vendor` directory.
 5. Execute the `go build` command. Ensure that the vendored dependencies are used.
 6. Open the IDE of your choice and enable the vendoring option for that project.
+7. (Optional) Discuss: From your perspective, what could be an issue with using vendoring?
