@@ -1,6 +1,6 @@
 # Exercise 7
 
-In this exercise, you will use a different proxy server for resolving dependencies.
+In this exercise, you will use a different proxy server for resolving dependencies than the Google proxy.
 
 1. Create a new directory and initialize Go Modules for this project.
 2. Open a browser, open [GoCenter](https://search.gocenter.io/) and search for the package `github.com/goccy/go-yaml`.
