@@ -1,6 +1,6 @@
 # Exercise 4
 
-In this exercise, you will declare, resolve and use a dependency with different major versions. You will learn that the API even for breaking changes by using different import paths.
+In this exercise, you will declare, resolve and use a dependency with different major versions. You will learn that you can gradually migrate to the latest changes of the API by using different import paths.
 
 1. Create a new `main.go` file in a new directory. Initialize Go Modules for this project.
 2. Inspect the code and tags of the repository [github.com/bmuschko/calc](https://github.com/bmuschko/calc). Compare the API between the major versions v1 and v2.
