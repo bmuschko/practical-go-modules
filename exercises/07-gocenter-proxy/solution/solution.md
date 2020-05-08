@@ -1,6 +1,6 @@
 # Solution
 
-Create a new directory and navigate there in the console. Initialize Go Modules.
+Create a new directory and navigate to it in the console. Initialize Go Modules.
 
 ```bash
 $ mkdir code

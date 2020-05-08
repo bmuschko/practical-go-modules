@@ -6,4 +6,4 @@ In this exercise, you will practice the use of module queries for a dependency. 
 2. List the available versions of the package `github.com/sirupsen/logrus`.
 3. Add the version `v1.0.3` of `github.com/sirupsen/logrus` to the project.
 4. Change the dependency version to the `master` branch. Have a look at the selected version identifier.
-5. Change the dependency version to pick a version greater than `v1.0.6` using the `>` sign. Which version has been selected and why?
+5. Change the dependency version to pick a version higher than `v1.0.6` using the `>` sign. Which version has been selected and why?

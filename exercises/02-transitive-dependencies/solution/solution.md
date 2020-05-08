@@ -1,6 +1,6 @@
 # Solution
 
-The initial [`go.mod`](../start/go.mod) file declare a dependency on `github.com/stretchr/testify` with version `v1.4.0`. Testify pull in various transitive dependencies.
+The initial [`go.mod`](../start/go.mod) file declares a dependency on `github.com/stretchr/testify` with version `v1.4.0`. Testify pulls in various transitive dependencies.
 
 The dependency graph looks as follows:
 
@@ -77,7 +77,7 @@ github.com/stretchr/testify@v1.3.0 github.com/pmezard/go-difflib@v1.0.0
 github.com/stretchr/testify@v1.3.0 github.com/stretchr/objx@v0.1.0
 ```
 
-The select versions us the "minimal version selection" strategy. It uses `go-spew` with version v1.1.1, `objx` with version v0.2.0 and `testify` with version v1.4.0.
+The version has been selected by the "minimal version selection" strategy. It uses `go-spew` with version v1.1.1, `objx` with version v0.2.0 and `testify` with version v1.4.0.
 
 ```bash
 go list -m all

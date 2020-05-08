@@ -42,7 +42,7 @@ go: downloading github.com/sirupsen/logrus v1.4.3-0.20191026113918-67a7fdcf741f
 go: extracting github.com/sirupsen/logrus v1.4.3-0.20191026113918-67a7fdcf741f
 ```
 
-Get the next bigger version than `v1.0.6`. You will find that Go will select version `v1.1.0`.
+Get the next higher version than `v1.0.6`. You will find that Go will select version `v1.1.0`.
 
 ```bash
 $ go get "github.com/sirupsen/logrus@>v1.0.6"
