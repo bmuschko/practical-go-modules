@@ -16,7 +16,7 @@ $ go mod init github.com/bmuschko/json-parsing
 go: creating new go.mod: module github.com/bmuschko/json-parsing
 ```
 
-The contents of `go.mod` should look as following depending on the module path you provided.
+The contents of `go.mod` should look as follows depending on the module path you provided.
 
 ```
 module github.com/bmuschko/json-parsing

@@ -33,7 +33,7 @@ go: extracting golang.org/x/crypto v0.0.0-20200117160349-530e935923ad
 go: extracting golang.org/x/sys v0.0.0-20200120151820-655fe14d7479
 ```
 
-Get the `master` branch. The version identifier contains timestamp and commit hash.
+Get the `master` branch. The version identifier contains the timestamp and commit hash.
 
 ```bash
 $ go get github.com/sirupsen/logrus@master
