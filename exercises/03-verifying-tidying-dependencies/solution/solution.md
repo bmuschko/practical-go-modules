@@ -65,7 +65,7 @@ The resulting `go.mod` file will look as follows:
 ```
 module github.com/bmuschko/calc
 
-go 1.13
+go 1.20
 
 require (
 	github.com/juju/errors v0.0.0-20190930114154-d42613fe1ab9 // indirect
@@ -84,7 +84,7 @@ The `go.mod` will not contain the dependency declaration anymore.
 ```
 module github.com/bmuschko/calc
 
-go 1.13
+go 1.20
 
 require github.com/stretchr/testify v1.4.0
 ```

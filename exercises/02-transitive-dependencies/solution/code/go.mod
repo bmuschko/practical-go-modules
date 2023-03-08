@@ -1,6 +1,6 @@
 module github.com/bmuschko/calc
 
-go 1.13
+go 1.20
 
 require (
 	github.com/stretchr/objx v0.2.0 // indirect

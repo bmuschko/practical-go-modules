@@ -1,5 +1,5 @@
 module github.com/bmuschko/json-parsing
 
-go 1.13
+go 1.20
 
-require github.com/buger/jsonparser v0.0.0-20191204142016-1a29609e0929
+require github.com/buger/jsonparser v1.1.1

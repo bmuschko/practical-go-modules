@@ -21,7 +21,7 @@ The contents of `go.mod` should look as follows depending on the module path you
 ```
 module github.com/bmuschko/json-parsing
 
-go 1.13
+go 1.20
 ```
 
 Create a new file called `main.go`. The content could look as shown in [this file](./code-without-dependency/main.go).
@@ -48,16 +48,16 @@ The contents of `go.mod` should contain an entry for the dependency with an "ind
 ```
 module github.com/bmuschko/json-parsing
 
-go 1.13
+go 1.20
 
-require github.com/buger/jsonparser v0.0.0-20191204142016-1a29609e0929 // indirect
+require github.com/buger/jsonparser v1.1.1 // indirect
 ```
 
-The `go list` command will show that no versions have been published yet.
+The `go list` command will show that other versions have been published.
 
 ```bash
 $ go list -m -versions github.com/buger/jsonparser
-github.com/buger/jsonparser
+github.com/buger/jsonparser v1.0.0 v1.1.0 v1.1.1
 ```
 
 Modify the contents of `main.go`. Use the API of the external dependency. The content could look as shown in [this file](./code-with-dependency/main.go). If you are working in an IDE, the "indirect" comment will be removed automatically.

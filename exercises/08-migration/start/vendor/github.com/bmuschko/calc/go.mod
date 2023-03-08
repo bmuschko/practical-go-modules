@@ -1,3 +1,3 @@
 module github.com/bmuschko/calc
 
-go 1.13
+go 1.20

@@ -19,13 +19,16 @@ The dependency graph contains the dependency `github.com/sirupsen/logrus` and it
 
 ```bash
 $ go mod graph
-github.com/bmuschko/my-app github.com/sirupsen/logrus@v1.4.2
-github.com/sirupsen/logrus@v1.4.2 github.com/davecgh/go-spew@v1.1.1
-github.com/sirupsen/logrus@v1.4.2 github.com/konsorten/go-windows-terminal-sequences@v1.0.1
-github.com/sirupsen/logrus@v1.4.2 github.com/pmezard/go-difflib@v1.0.0
-github.com/sirupsen/logrus@v1.4.2 github.com/stretchr/objx@v0.1.1
-github.com/sirupsen/logrus@v1.4.2 github.com/stretchr/testify@v1.2.2
-github.com/sirupsen/logrus@v1.4.2 golang.org/x/sys@v0.0.0-20190422165155-953cdadca894
+github.com/bmuschko/my-app github.com/sirupsen/logrus@v1.9.0
+github.com/bmuschko/my-app golang.org/x/sys@v0.0.0-20220715151400-c0bba94af5f8
+github.com/sirupsen/logrus@v1.9.0 github.com/davecgh/go-spew@v1.1.1
+github.com/sirupsen/logrus@v1.9.0 github.com/stretchr/testify@v1.7.0
+github.com/sirupsen/logrus@v1.9.0 golang.org/x/sys@v0.0.0-20220715151400-c0bba94af5f8
+github.com/stretchr/testify@v1.7.0 github.com/davecgh/go-spew@v1.1.0
+github.com/stretchr/testify@v1.7.0 github.com/pmezard/go-difflib@v1.0.0
+github.com/stretchr/testify@v1.7.0 github.com/stretchr/objx@v0.1.0
+github.com/stretchr/testify@v1.7.0 gopkg.in/yaml.v3@v3.0.0-20200313102051-9f266ea9e77c
+gopkg.in/yaml.v3@v3.0.0-20200313102051-9f266ea9e77c gopkg.in/check.v1@v0.0.0-20161208181325-20d25e280405
 ```
 
 Add a `main.go` file with the following contents. As you can see it uses the API of the external dependency.
@@ -50,9 +53,9 @@ The `go mod vendor` downloads the dependencies and puts them into the `vendor` d
 $ go mod vendor
 $ ls -l vendor
 total 8
-drwxr-xr-x  4 bmuschko  staff  128 Jan 20 13:53 github.com
-drwxr-xr-x  3 bmuschko  staff   96 Jan 20 13:53 golang.org
--rw-r--r--  1 bmuschko  staff  250 Jan 20 13:53 modules.txt
+drwxr-xr-x  3 bmuschko  staff   96 Mar  8 13:28 github.com
+drwxr-xr-x  3 bmuschko  staff   96 Mar  8 13:28 golang.org
+-rw-r--r--  1 bmuschko  staff  245 Mar  8 13:28 modules.txt
 ```
 
 Generate the binary with the `go build` command. Make sure to point to the vendored dependencies.

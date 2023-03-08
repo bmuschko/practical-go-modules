@@ -38,7 +38,7 @@ As a result, the `go.mod` file contain the `objx` library as top-level dependenc
 ```
 module github.com/bmuschko/calc
 
-go 1.13
+go 1.20
 
 require (
 	github.com/stretchr/objx v0.2.0 // indirect
@@ -51,7 +51,7 @@ You will find that [`objx`](https://github.com/stretchr/objx/blob/v0.2.0/go.mod)
 ```
 module github.com/stretchr/objx
 
-go 1.12
+go 1.20
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
@@ -95,7 +95,7 @@ You can enforce the use of the version v1.3.0 for `testify` with a replace state
 ```
 module github.com/bmuschko/calc
 
-go 1.13
+go 1.20
 
 require (
 	github.com/stretchr/objx v0.2.0 // indirect
